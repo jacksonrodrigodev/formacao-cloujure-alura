@@ -1,3 +1,6 @@
+#_{:clj-kondo/ignore [:namespace-name-mismatch]}
+(ns aula-02)
+
 (defn valor-descontado
   "Retorna o valor com descontado de 10%."
   [valor-bruto]

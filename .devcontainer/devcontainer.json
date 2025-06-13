@@ -1,0 +1,19 @@
+{
+  "name": "Clojure Dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "bash"
+  },
+  "extensions": [
+    "betterthantomorrow.calva",
+    "ms-azuretools.vscode-docker"
+  ],
+  "postCreateCommand": "clojure -Sdescribe",
+  "remoteUser": "root",
+  "workspaceFolder": "/workspace",
+  "mounts": [
+    "source=.,target=/workspace,type=bind"
+  ]
+}

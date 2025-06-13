@@ -1,9 +1,13 @@
+#_{:clj-kondo/ignore [:namespace-name-mismatch]}
+(ns aula-01)
+
 (println "Bem vindo ao sistema de estoque!")
 
 (def total-de-produtos 15)
 
 (println "Total de produtos: " total-de-produtos)
 
+#_{:clj-kondo/ignore [:redefined-var]}
 (def total-de-produtos 13)
 
 (println "Total de produtos: " total-de-produtos)
@@ -14,6 +18,7 @@
 
 (+ total-de-produtos 3)
 
+#_{:clj-kondo/ignore [:redefined-var]}
 (def total-de-produtos (+ total-de-produtos 3))
 
 (println "Total" total-de-produtos)
@@ -33,6 +38,7 @@
 (println "Estoque: " (conj estoque "Cadeira"))
 (println "Estoque: " estoque)
 
+#_{:clj-kondo/ignore [:redefined-var]}
 (def estoque (conj estoque "Cadeira"))
 (println "Estoque: " estoque)
 
